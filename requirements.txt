@@ -2,8 +2,7 @@ pandas
 streamlit
 seaborn
 matplotlib
-date
-timedelta
-relativedelta
+datetime
+dateutil.relativedelta
 re
-Image
+PIL
