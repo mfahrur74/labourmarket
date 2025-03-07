@@ -1,7 +1,8 @@
+pip --upgrade
 pandas
 streamlit
 seaborn
 matplotlib
 datetime
 python-dateutil
-PIL
+pillow
