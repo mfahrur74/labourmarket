@@ -7,8 +7,7 @@ import re
 from PIL import Image
 
 # Set CSV file path
-folder = r'/Users/pksstaff/Desktop/SQL Backup/'  # Change this to your actual folder path
-csv_file = folder + "dm_vacancy.csv"
+csv_file = st.secrets["DATA_PATH"]
 
 # Function to clean and process data
 def process_data(role, keywords):
