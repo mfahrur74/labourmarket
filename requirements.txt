@@ -3,6 +3,6 @@ streamlit
 seaborn
 matplotlib
 datetime
-relativedelta
+python-dateutil
 re
 PIL
