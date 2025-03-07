@@ -1,6 +1,7 @@
 pandas
 streamlit
 openpyxl
+xlsxwriter
 seaborn
 matplotlib
 datetime
