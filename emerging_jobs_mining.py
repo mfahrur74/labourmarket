@@ -6,8 +6,7 @@ from dateutil.relativedelta import relativedelta
 import re
 from PIL import Image
 
-# Set CSV file path
-csv_file = st.secrets["DATA_PATH"]
+
 
 # File uploader
 uploaded_file = st.file_uploader(r"/Users/pksstaff/Desktop/SQL Backup/dm_vacancy.csv", type=['csv'])
@@ -25,6 +24,8 @@ if uploaded_file:
 else:
     st.warning("Please upload a CSV file.")
 
+# Set CSV file path
+csv_file = st.secrets["DATA_PATH"]
 
 # Function to clean and process data
 def process_data(role, keywords):
