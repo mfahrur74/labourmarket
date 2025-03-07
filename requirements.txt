@@ -4,5 +4,4 @@ seaborn
 matplotlib
 datetime
 python-dateutil
-re
 PIL
