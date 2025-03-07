@@ -9,6 +9,23 @@ from PIL import Image
 # Set CSV file path
 csv_file = st.secrets["DATA_PATH"]
 
+# File uploader
+uploaded_file = st.file_uploader(r"/Users/pksstaff/Desktop/SQL Backup/dm_vacancy.csv", type=['csv'])
+
+if uploaded_file:
+    file_path = "/mnt/data/dm_vacancy.csv"  # Save file in Streamlit Cloud
+    with open(file_path, "wb") as f:
+        f.write(uploaded_file.getbuffer())
+
+    st.success(f"File successfully uploaded to {file_path}")
+
+    # Load CSV
+    df = pd.read_csv(file_path)
+    st.dataframe(df)
+else:
+    st.warning("Please upload a CSV file.")
+
+
 # Function to clean and process data
 def process_data(role, keywords):
     # Read the CSV file
